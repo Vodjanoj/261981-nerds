@@ -46,34 +46,31 @@
 			                </div>
                             <div class="right-slider">
                             </div>
-                         </div>   
-                    </div>
-                    <div class="set-price">
-                        <div class="set-price-from">
-                            <label for="price-from">От</label>
-                            <input id="price-from" type="text" name="min-price">
-                        </div>
-                        <div class="set-price-to">
-                            <label for="price-to">До</label>
-                            <input id="price-to" type="text" name="max-price">
+                        </div>   
+                        <div class="set-price">
+                            <div class="set-price-from">
+                                <label for="price-from">От</label>
+                                <input id="price-from" type="text" name="min-price">
+                            </div>
+                            <div class="set-price-to">
+                                <label for="price-to">До</label>
+                                <input id="price-to" type="text" name="max-price">
+                            </div>
                         </div>
                     </div>
                     <div class="html-arrangement-type">
                         <h2>Сетка:</h2>
                         <div class="arrangement-type">
-                            <label>
-                            <input type="radio" name="arrangement-type-item" value="responsive">Адаптивная
-                            </label><br>
+                            <label for="arrangement-type-responsive">Адаптивная</label>
+                            <input type="radio" id="arrangement-type-responsive" name="arrangement-type-item" value="responsive" checked>
                         </div>
                         <div class="arrangement-type">
-                            <label>
-                            <input type="radio" name="arrangement-type-item" value="fixed">Фиксированная
-                            </label><br>
+                            <label for="arrangement-type-fixed">Фиксированная</label> 
+                            <input type="radio" id="arrangement-type-fixed" name="arrangement-type-item" value="fixed">
                         </div>
                         <div class="arrangement-type">
-                            <label>
-                            <input type="radio" name="arrangement-type-item" value="flexible">Резиновая
-                            </label><br>
+                            <label for="arrangement-type-flexible">Резиновая</label>
+                            <input type="radio" id="arrangement-type-flexible" name="arrangement-type-item" value="flexible">
                         </div>
                     </div>
                     <div class="product-features-container">
@@ -116,17 +113,50 @@
                     </div> 
                 </div> 
                 <!-- Фоновые картинки зададим в CSS --> 
-                <div class="block1"> <!-- как делать ховеры с различным содержимым непонятно --> 
-                </div>
-                <div class="block2">
-                </div>
-                <div class="block3">
-                </div>
-                <div class="block4">
-                </div>
-                <div class="block5">
-                </div>
-                <div class="block6">
+                <div class="company-portfolio-patterns">
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-hover">
+                            <span>Sedona</span>
+                            <p>Информационный сайт  для туристов</p>
+                            <button class="btn" type="button">9 900 РУБ</button>
+                        </div>
+                    </div>
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-hover">
+                            <span>Названия макета</span>
+                            <p>Описание</p>
+                            <button class="btn" type="button">цена РУБ</button>
+                        </div>
+                    </div>
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-hover">
+                            <span>Названия макета</span>
+                            <p>Описание</p>
+                            <button class="btn" type="button">цена РУБ</button>
+                        </div>
+                    </div>
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-hover">
+                            <span>Названия макета</span>
+                            <p>Описание</p>
+                            <button class="btn" type="button">цена РУБ</button>
+                        </div>
+                    </div>
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-hover">
+                            <span>Названия макета</span>
+                            <p>Описание</p>
+                            <button class="btn" type="button">цена РУБ</button>
+                        </div>
+                    </div>
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-hover">
+                            <span>Названия макета</span>
+                            <p>Описание</p>
+                            <button class="btn" type="button">цена РУБ</button>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="portfolio-items-pages">
                     <a class="btn-page" href="#">1</a>
@@ -136,20 +166,15 @@
                 </div>
             </div>
             <div class="map contacts">
-            	<div class="map-image"><!-- класс для фоновой картинки --> 
-            		<div class="contacts">
-            			<p><b>NЁRDS DESIGN STUDIO</b></p>
-            			191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br>
-            			тел. +7 (812) 275-75-75<br>
-            			<button class="btn" type="button">Напишите нам</button>	
-            		</div>
-            		<div class="company-location">
-            			<div class="logo-location">
-							<img src="http://placehold.it/150x100" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
+                <div class="map"> 
+                    <div class="contacts">
+                        <p><b>NЁRDS DESIGN STUDIO</b></p>
+                        191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br>
+                        тел. +7 (812) 275-75-75<br>
+                        <button class="btn" type="button">Напишите нам</button> 
+                    </div>
+                </div>
+            </div>
 		</main>
 		<footer class="main-footer">
 			<div class="container">
