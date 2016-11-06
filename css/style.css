@@ -1,0 +1,24 @@
+body {
+font-size: 16px;
+line-height: 24px;
+color: #283136;
+font-family: Roboto Regalar;
+font-weight: normal;
+}
+
+h1 {
+font-size: 55px;
+line-height: 55px;
+color: #000000;
+font-family: Roboto Medium;	
+font-weight: 500;
+}
+
+.company-presentation-left p b {
+font-size: 45px;
+line-height: 45px;
+color: #000000;
+font-family: Roboto Medium;	
+font-weight: 500;
+}
+
