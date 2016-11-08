@@ -2,7 +2,7 @@ body {
 font-size: 16px;
 line-height: 24px;
 color: #283136;
-font-family: Roboto Regalar;
+font-family: "Roboto Regular", Arial,  sans-serif;
 font-weight: normal;
 }
 
@@ -10,7 +10,7 @@ h1 {
 font-size: 55px;
 line-height: 55px;
 color: #000000;
-font-family: Roboto Medium;	
+font-family: "Roboto Medium", Arial,  sans-serif;	
 font-weight: 500;
 }
 
@@ -18,7 +18,7 @@ font-weight: 500;
 font-size: 45px;
 line-height: 45px;
 color: #000000;
-font-family: Roboto Medium;	
+font-family: "Roboto Medium", Arial,  sans-serif;
 font-weight: 500;
 }
 
