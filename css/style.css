@@ -2,8 +2,11 @@ body {
 font-size: 16px;
 line-height: 24px;
 color: #283136;
+background-color: #ffffff; 
 font-family: "Roboto Regular", Arial,  sans-serif;
 font-weight: normal;
+min-width: 1140px;
+min-height: 2476px;
 }
 
 h1 {
@@ -20,5 +23,180 @@ line-height: 45px;
 color: #000000;
 font-family: "Roboto Medium", Arial,  sans-serif;
 font-weight: 500;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+ 
+.main-header {
+    margin-bottom:80px;
+	/* Только для оформления сетки */
+	min-height: 355px;
+	background-color: #a9f0d3;
+}
+
+/* Только для оформления сетки */
+
+.container {
+	width:1180px;
+	padding: 0 10px;
+	background-color: #c09f9f;
+	margin:0 auto;
+ /* Только для оформления сетки */
+  	min-height: 365px;
+}
+
+.index-logo {
+	width:160px;
+	float:left;
+
+ /* Только для оформления сетки */
+	min-height: 65px;	
+ 	background-color: #b9ad88;
+}
+
+.main-navigation {
+	width:600px;
+	float:left;
+
+	 /* Только для оформления сетки */
+	min-height: 65px;	
+	background-color: #a28989;
+}
+
+.user-block {
+	width:160px;
+    float:right;
+
+	/* Только для оформления сетки */
+	min-height: 65px;	
+	background-color: #b8efea
+}
+
+.company-advantages-item {
+	width:300px;
+    float:left;
+    margin-right:100px;
+
+	/* Только для оформления сетки */
+	min-height: 348px;	
+	background-color: #8d9ac1;
+}
+
+.company-advantages-item:last-child {
+	margin-right:0;
+}
+
+.company-advantages {
+	margin-bottom:120px;
+}
+
+.company-presentation-left {
+	float:left;
+	padding-top:0px;
+	width:700px;
+
+	/* Только для оформления сетки */
+	min-height: 410px;	
+	background-color: #cbd69a;
+
+}
+
+.company-presentation-right {
+	float:right;
+	padding-left:0px;
+	padding-top:0px;
+	width:360px;
+
+	/* Только для оформления сетки */
+	min-height: 410px;	
+	background-color: #cbd69a;
+}
+
+.company-presentation {
+	margin-bottom: 80px;
+}
+
+.company-product-logos {
+	margin-bottom:80px;
+	text-align:center; 
+
+	/* Только для оформления сетки */
+	 	
+	background-color: #727c20;
+}
+
+.company-product-logos-item {
+	display:inline-block;
+	vertical-align: middle;
+	width:250px;
+	padding-top:45px;
+	padding-left:30px;
+	margin-right:5px;
+	 
+	/* Только для оформления сетки */
+	background-color: #61816c;
+ }
+
+.map-contacts {
+ 
+	/* Только для оформления сетки */
+	width:1440px;
+	min-height: 418px;
+	background-color: #a2a6b9;
+ }
+
+.contacts {
+	float:left;
+
+	/* Только для оформления сетки */
+	min-height: 310px;
+	width:320px;
+	background-color: #d9cfcf;
+}
+
+.main-footer {
+	margin-top: 0px;
+	padding-top:70px;
+}
+
+.footer-social {
+	float:left;
+	width:320px;
+/* Только для оформления сетки */
+	min-height: 80px;
+	background-color: #d9cfcf;
+}
+
+.slogan {
+	float:right;
+	width:560px;
+	margin-right:50px;
+/* Только для оформления сетки */
+	min-height: 80px;
+	background-color: #d9cfcf;
+}
+
+.products-filtr {
+	width:300px;
+	margin-right:80px;
+
+	/* Только для оформления сетки */
+	min-height: 840px;
+	background-color: #d9cfcf;
+}
+
+.company-portfolio {
+	width:760px;
+    float:right; /* Непонятно почему он не флоутится вправо */
+
+	/* Только для оформления сетки */
+	min-height: 2166px;
+	background-color: #d9cfcf;
+
 }
 
