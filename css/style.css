@@ -1,3 +1,8 @@
+html, body {
+margin: 0;
+padding: 0;
+}
+
 body {
 font-size: 16px;
 line-height: 24px;
@@ -6,7 +11,6 @@ background-color: #ffffff;
 font-family: "Roboto Regular", Arial,  sans-serif;
 font-weight: normal;
 min-width: 1140px;
-min-height: 2476px;
 }
 
 h1 {
@@ -25,6 +29,15 @@ font-family: "Roboto Medium", Arial,  sans-serif;
 font-weight: 500;
 }
 
+div {
+	display:block;
+}
+
+ 
+* {
+box-sizing: border-box;	
+}
+
 .clearfix::after {
   content: "";
 
@@ -33,7 +46,7 @@ font-weight: 500;
 }
  
 .main-header {
-    margin-bottom:80px;
+    margin-bottom:0px;
 	/* Только для оформления сетки */
 	min-height: 355px;
 	background-color: #a9f0d3;
@@ -46,8 +59,6 @@ font-weight: 500;
 	padding: 0 10px;
 	background-color: #c09f9f;
 	margin:0 auto;
- /* Только для оформления сетки */
-  	min-height: 365px;
 }
 
 .index-logo {
@@ -92,7 +103,7 @@ font-weight: 500;
 }
 
 .company-advantages {
-	margin-bottom:120px;
+	margin-bottom:0px;
 }
 
 .company-presentation-left {
@@ -118,11 +129,11 @@ font-weight: 500;
 }
 
 .company-presentation {
-	margin-bottom: 80px;
+	margin-bottom: 0px;
 }
 
 .company-product-logos {
-	margin-bottom:80px;
+	margin-bottom:0px;
 	text-align:center; 
 
 	/* Только для оформления сетки */
@@ -142,12 +153,11 @@ font-weight: 500;
 	background-color: #61816c;
  }
 
-.map-contacts {
- 
-	/* Только для оформления сетки */
-	width:1440px;
-	min-height: 418px;
+.map {
+ 	 
+	/* Только для оформления сетки */ 
 	background-color: #a2a6b9;
+	min-height: 416px;
  }
 
 .contacts {
@@ -161,7 +171,11 @@ font-weight: 500;
 
 .main-footer {
 	margin-top: 0px;
-	padding-top:70px;
+	padding-top:0px;
+
+/* Только для оформления сетки */
+	min-height: 217px;
+	background-color: #f7cccd;
 }
 
 .footer-social {
@@ -182,8 +196,8 @@ font-weight: 500;
 }
 
 .products-filtr {
-	width:300px;
-	margin-right:80px;
+	float:left;
+	width:280px;
 
 	/* Только для оформления сетки */
 	min-height: 840px;
@@ -191,12 +205,151 @@ font-weight: 500;
 }
 
 .company-portfolio {
-	width:760px;
-    float:right; /* Непонятно почему он не флоутится вправо */
+	width:780px;
+    float:right;
+    padding-left: 20px; 
+
 
 	/* Только для оформления сетки */
 	min-height: 2166px;
 	background-color: #d9cfcf;
+}
+
+.portfolio-item {
+	float:left;
+	width:360px;
+	margin-right: 40px;
+	margin-bottom:36px;
+
+/* Только для оформления сетки */
+	min-height: 616px;
+	background-color: #99a18c;	
+}
+
+.portfolio-item:nth-child(2n) {
+	margin-right:0px;
+}
+
+.company-portfolio-patterns {
+	width:760px;
+
+/* Только для оформления сетки */
+	min-height: 1926px;
+	background-color: #fba7a9;
+}
+
+.slider {
+	position:relative;
+	width:1160px;
+	height:431px;
+	margin: 0 auto;
+	border:1px dotted black;
 
 }
 
+.slider-controls {
+	position: absolute;
+	bottom:95px;
+	left:50%;
+	width:200px;
+	height:10px;
+	margin-left:-100px;
+	text-align: center;
+	border:1px dotted green;
+	z-index: 1000;
+}
+
+/* Непонятно почему не подсвечивается элемент активный */
+.slider-controls label {
+	display:inline-block;
+	width:4px;
+	height:4px;
+	margin:0 3px;
+	background:white;
+	border:3px solid white;
+	vertical-align:top;
+	border-radius:50%;
+	cursor:pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+
+	background: #c1c1c1;
+
+}
+.slider-controls .active {
+	background: #c1c1c1;
+}
+
+.slide {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgba(255,255,0,0.1);
+}
+
+.slide-text {
+	width:380px;
+	padding:30px 0;
+	color:#283136;
+}
+
+.slide-title {
+	font-size:36px;
+	line-height:1;
+	font-weight:bold;
+	color:black;
+}
+
+.slide .btn {
+	display:block;
+	width:240px;
+	padding:10px 0;
+	margin-top:25px;
+	font-size:12px;
+	color:white;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	background: #fb565a;
+	border-radius: 3px;
+}
+
+.slide:nth-child(1) {
+	background-image:url('../img/slider-1.png');
+	background-repeat:no-repeat;
+	background-position:100% 10px;
+}
+
+.slide:nth-child(2) {
+	background-image:url('../img/slider-2.png');
+	background-repeat:no-repeat;
+	background-position:100% 10px;
+}
+
+.slide:nth-child(3) {
+	background-image:url('../img/slider-3.png');
+	background-repeat:no-repeat;
+	background-position:100% 0px;
+}
+ 
+.slide {
+	display:none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+	display:block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+	display:block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+	display:block;
+}

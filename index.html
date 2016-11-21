@@ -8,24 +8,24 @@
 	<body>
 		<header class="main-header">
 			<div class="container">
-                <div class="container_head clearfix">
+                <div class="maain-header-top clearfix">
 				    <div class="index-logo">
                         <img src="img/main-logo.png" width="161" height="65" alt="Нердс">
                     </div>
-				    <nav class="main-navigation">
-					   <ul>
-					       <li>
-							   <a href="#">Студия</a>
-						   </li>
-						   <li>
-							   <a href="#">Клиенты</a>
-						   </li>
-						   <li>
-							   <a href="#">Магазин</a>
-						   </li>
-						   <li>
-							   <a href="#">Контакты</a>
-						    </li>
+                    <nav class="main-navigation">
+                        <ul>
+                            <li>
+                                <a href="#">Студия</a>
+                            </li>
+                            <li>
+                                <a href="#">Клиенты</a>
+                            </li>
+                            <li>
+                                <a href="#">Магазин</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
                         </ul>
  				    </nav>
                     <div class="user-block">
@@ -33,31 +33,42 @@
                         <a class="shopping-cart" href="#">Корзина</a>
                     </div> 
                 </div>
-                <div class="about-company">
-                    <div class="slider">
-                        <h1>Долго, дорого, скрупулезно</h1> <!-- временное решение --> 
-                        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-            	        <input type="radio" id="btn-1" name="toggle" checked>
-                        <input type="radio" id="btn-2" name="toggle">
-                        <input type="radio" id="btn-3" name="toggle">
-            	        <div class="slider-controls">
-                            <label for="btn-1"></label>
-                            <label for="btn-2"></label>
-                            <label for="btn-3"></label>
+            </div>
+            <div class="container">
+                <div class="slider">
+            	    <input type="radio" id="btn-1" name="toggle" checked>
+                    <input type="radio" id="btn-2" name="toggle">
+                    <input type="radio" id="btn-3" name="toggle">
+            	    <div class="slider-controls">      
+                        <label for="btn-1"></label>
+                        <label for="btn-2"></label>
+                        <label for="btn-3"></label> 
             	        </div>
-            	        <div class="slider-inner">
-                            <div class="slider-slides">
-                       	        <img src="img/slider-1.jpg" width="760" height="431" alt="">
-                                <img src="img/slider-2.jpg" width="760" height="431" alt="">
-                                <img src="img/slider-3.jpg" width="760" height="431" alt="">
+            	    <div class="slides">
+                        <div class="slide">
+                       	    <div class="slide-text">
+                                <div class="slide-title">Долго, дорого, скрупулезно</div>
+                                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+                                <a class="btn" href="#">Узнать больше</a>
+                            </div>   
+                        </div>
+                        <div class="slide">
+                            <div class="slide-text">
+                                <div class="slide-title">Любим математику как никто другой</div>
+                                <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций</p>
+                                <a class="btn" href="#">Узнать больше</a>
+                            </div>        
+                        </div>    
+                        <div class="slide">
+                            <div class="slide-text">
+                                <div class="slide-title">Только ночь, только хардкор</div>
+                                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
+                                <a class="btn" href="#">Узнать больше</a>
                             </div>
-                        </div>
-                        <div class="more-information">
-                            <button class="btn" type="button">Узнать больше</button>
-                        </div>
+                        </div> 
                     </div>
-                </div>
-        	</div>
+                </div>  
+            </div>   
         </header>
         <main class="container">
             <div class="company-advantages clearfix">
@@ -136,17 +147,17 @@
                     <img src="img/logo-mishka.jpg" width="173" height="84" alt="Mishka">
                 </div>
             </div>
-            <div class="map-contacts">
-            	<div class="map"> <!-- Фоновую картинку карты зададим в CSS --> 
-            		<div class="contacts">
-            			<p><b>NЁRDS DESIGN STUDIO</b></p>
-            			191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br>
-            			тел. +7 (812) 275-75-75<br>
-            			<button class="btn" type="button">Напишите нам</button>	
-            		</div>
-				</div>
+        </main>
+        <div class="map"><!-- Фоновую картинку карты зададим в CSS --> 
+            <div class="container">  
+            	<div class="contacts">
+            		<p><b>NЁRDS DESIGN STUDIO</b></p>
+            		191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br>
+            		тел. +7 (812) 275-75-75<br>
+            		<a href="#" class="btn">Напишите нам</a>
+            	</div>
 			</div>
-		</main>
+		</div>
 		<footer class="main-footer">
 			<div class="container">
 				<section class="footer-social">
